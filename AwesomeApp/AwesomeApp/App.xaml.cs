@@ -10,7 +10,8 @@ namespace AwesomeApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new HelloMedtronic();
         }
 
         protected override void OnStart()

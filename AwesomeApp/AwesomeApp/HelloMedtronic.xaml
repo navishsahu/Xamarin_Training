@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AwesomeApp"
+             x:Class="AwesomeApp.HelloMedtronic">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="textPhoneword" 
+                   Placeholder="ENTER THE PHONEWORD"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   PlaceholderColor="DeepSkyBlue" />
+            <Button x:Name="buttonTranslate" 
+                    Text="Translate"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="CenterAndExpand" 
+                    BackgroundColor="DeepSkyBlue" 
+                    TextColor="White"
+                    Clicked="OnTranslate" />
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="EndAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
