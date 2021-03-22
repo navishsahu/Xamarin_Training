@@ -1,15 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:AwesomeApp"
+             xmlns:local="clr-namespace:AwesomeApp;assembly=AwesomeApp"
+             xmlns:Effects="clr-namespace:AwesomeApp" 
              x:Class="AwesomeApp.HelloMedtronic">
     <ContentPage.Content>
         <StackLayout>
+            <local:CustomEntry Placeholder="Custom Renderer" 
+                               VerticalOptions="StartAndExpand" 
+                               HorizontalOptions="CenterAndExpand"/>
             <Entry x:Name="textPhoneword" 
-                   Placeholder="ENTER THE PHONEWORD"
+                   Placeholder="PHONEWORD FOCUS EFFECT"
                    VerticalOptions="StartAndExpand" 
                    HorizontalOptions="CenterAndExpand" 
-                   PlaceholderColor="DeepSkyBlue" />
+                   PlaceholderColor="DeepSkyBlue">
+                <Entry.Effects>
+                    <Effects:FocusEffect/>
+                </Entry.Effects>
+            </Entry>
             <Button x:Name="buttonTranslate" 
                     Text="Translate"
                     VerticalOptions="StartAndExpand" 
